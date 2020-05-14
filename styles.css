@@ -1,0 +1,179 @@
+/** 
+* AUTHOR: Collin deKorne
+*/
+
+body{
+    background: white;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    background-image: url("images/hero.png");
+    background-size: 110%;
+    background-position: center;
+    padding: 15px;
+    height: 250px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+header .logo a{
+    background-color: none;
+    background-image: url("images/logo.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 70px;
+    position: absolute;
+    text-indent: -999999px;
+    top: 10px;
+    left: 10px;
+    width: 210px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li.search{
+    display: inline-block;
+    float: center;
+}
+
+
+/* BUTTONS */
+.button{
+    margin: 0 5px 5px 0;
+    border-radius: 6px;
+}
+
+.login, .signup, .signout, .profile, .listing, .post{
+    float: right;
+}
+
+.more-info{
+    box-shadow: 1px 1px 4px grey;
+}
+
+.close{
+    border-radius: 10px;
+}
+
+/* INPUTS */
+.dollar-sign{
+    position: relative;
+}
+
+.dollar-sign > i{
+    position: absolute;
+    display: block;
+    transform: translate(0, -55%);
+    top: 50%;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+}
+
+.dollar-sign > input {
+    padding-left: 18px;
+    padding-right: 0;
+}
+
+.search-text{
+    border-radius: 6px;
+    width: 500px;
+    height: 40px;
+    font-size: 16px;
+}
+
+/* FEATURES */
+.about{    
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about div{
+    color: red;
+    font-size: 30px;
+}
+.about p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+p{
+    color: black;
+}
+   
+@media screen and (max-width: 700px){
+    .popup{
+    width: 70%;
+    }
+}
+
+/* FOOTER */
+
+footer.team{
+    background: rgb(82, 99, 117);
+    font-size: 12px;
+    padding: 2px 2px;
+    text-align: center;
+}
+
+footer div.levelup{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.info{
+    margin-top: 95px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+/* SEARCH */
+
+.search-results{
+    text-align: center;
+}
+
+.userlisting{
+    display: inline-block;
+    background-color: rgb(240, 240, 240);
+    margin: 3px;
+    box-shadow: 1px 1px 4px grey;
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+}
+
+.userlisting h3, .price, .seller{
+    text-align: center;
+    padding: 5px;
+}
+
+/* QUICK LOOK FEATURES */
+.quick-look{
+    border-radius: 10px;
+}
+
+.ql-desc, .ql-price, .ql-seller{
+    margin: 10px;
+    padding: 50px 20px 50px 0;
+}
